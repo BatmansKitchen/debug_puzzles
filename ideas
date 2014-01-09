@@ -1,0 +1,9 @@
+* Forkbomb
+* Entropy pool waster
+* PAM breaker
+* Shitty cron/scheduled tasks
+* ARP table flusher
+* Drying up handles of any sort
+* Acquire locks to stop programs from loading
+* Troll search path for dll dependencies
+* fuxor /etc/hosts or C:\Windows\System32\drivers\etc\hosts
