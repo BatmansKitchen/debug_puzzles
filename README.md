@@ -5,6 +5,10 @@ will mutate the host machine, and it will be up to the user to fix the
 mutation. The puzzles each will give a clear victory condition to tell
 if you have won or not.
 
+## Set up
+
+Run `./deploy.sh` as root on your machine.
+
 ## Problem format
 
 Read the **README.md** for the problem statement. If you're done or
