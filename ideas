@@ -7,3 +7,13 @@
 * Acquire locks to stop programs from loading
 * Troll search path for dll dependencies
 * fuxor /etc/hosts or C:\Windows\System32\drivers\etc\hosts
+
+* Bad PATH (both env and language specific PYTHONPATH)
+* Misbehaving bashrc (aliases? perhaps sourcing a file)
+* Some type of NFS misbehaivor
+* Bad routing table
+* Bad firewall rules
+* Troll LD_PRELOAD
+* Rogue DHCP/NO DHCP
+* File having wrong flags (such as somethign being immutable or append only that should not be)
+* Bad kernel module
