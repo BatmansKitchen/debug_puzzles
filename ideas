@@ -29,3 +29,4 @@
 * Spew to stdout
 * Shell failing to start
 * init.d failure or misconfiguration
+* Reconstruct files from .git directory
