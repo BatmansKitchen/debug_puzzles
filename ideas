@@ -17,3 +17,6 @@
 * Rogue DHCP/NO DHCP
 * File having wrong flags (such as somethign being immutable or append only that should not be)
 * Bad kernel module
+* Full disk (log files too big)
+* Thrashing
+* Broadcast storm
