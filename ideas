@@ -20,3 +20,12 @@
 * Full disk (log files too big)
 * Thrashing
 * Broadcast storm
+* Port already in use
+* Nice 20 (or some other type of bad scheduling, not sure how easy/hard this would be to make happen)
+* Bad CMOS battery (causes system clock to be epoch time, which causes all sorts of erratic behaivor iirc)
+* Bad bios settings
+* Bad boot loader flags
+* Device not mounted or improperly mounted (read only fs?)
+* Spew to stdout
+* Shell failing to start
+* init.d failure or misconfiguration
