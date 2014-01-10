@@ -1,13 +1,18 @@
-#!/bin/bash
-# This script sets all of the puzzle files to be owned by root, and all of the
-# run scripts to be setuid. This is because some puzzles need root in order to
-# run
-# This script must be run as root
+#!/bin/sh
+# This script sets up the "run" suid executable in each puzzle directory which
+# is just a wrapper around the implementation shell script "impl.sh".
+# This script must be run as root.
 
-if [[ "$(id -u)" == "0" ]]; then
-    find . -name "run.bin" -exec chown root:root {} \;
-    find . -name "run.bin" -exec chmod +xs {} \;
+set -e
+
+if [ $(id -u) -eq 0 ]; then
+    cc -Wall -g -o unix/run unix/run.c
+    chown root:root unix/run
+    chmod +s unix/run
+    find unix -mindepth 1 -maxdepth 1 -type d | while read -r PUZZLE; do
+        ln -s "../run" "$PUZZLE/run"
+    done
 else
-    echo "This script must be run as root!"
+    echo "This script must be run as root!" >&2
     exit 1
 fi
