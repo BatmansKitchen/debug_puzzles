@@ -10,7 +10,7 @@ if [ $(id -u) -eq 0 ]; then
     chown root:root unix/run
     chmod +s unix/run
     find unix -mindepth 1 -maxdepth 1 -type d | while read -r PUZZLE; do
-        ln -s "../run" "$PUZZLE/run"
+        ln -sf "../run" "$PUZZLE/run"
     done
 else
     echo "This script must be run as root!" >&2

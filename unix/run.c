@@ -7,5 +7,6 @@ int main(int argc, char *argv[])
     if (execl("/bin/sh", "/bin/sh", "./impl.sh", (char *) NULL) == -1) {
         perror("execv");
         return 1;
-    }
+    } else
+        return 0;
 }
