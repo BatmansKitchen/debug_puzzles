@@ -30,3 +30,5 @@
 * Shell failing to start
 * init.d failure or misconfiguration
 * Reconstruct files from .git directory
+* Troll mysql's pid_file by making a fake one
+* Dump huge amounts of output to stdout such that if you have the terminal maximized, it will take like 15 days. But if the user makes the terminal window kinda small it should just take like 15 seconds
