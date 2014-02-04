@@ -21,5 +21,4 @@ and fix it:
 ```
 
 This can also be fixed by:
-running dhclient -r [if]; dhclient [if]
 rebooting
